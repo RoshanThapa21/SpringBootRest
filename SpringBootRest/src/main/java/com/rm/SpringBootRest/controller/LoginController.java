@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/welcomemessage", method = RequestMethod.GET)
     public String showLoginPage(ModelMap model) {
         model.put("name", "Roshan's Spring Security demo");
         return "index";
